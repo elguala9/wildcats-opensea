@@ -1,0 +1,32 @@
+{
+  "name": "wildcats-opensea",
+  "version": "1.0.1",
+  "description": "Library to interact with wildcats NFTs on Opensea",
+  "main": "WildcatsOpensea.js",
+  "scripts": {
+    "compile": "tsc -b tsconfig.json",
+    "test": "ts-node ./test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elguala9/wildcats-opensea.git"
+  },
+  "author": "Luca Gualandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elguala9/wildcats-opensea/issues"
+  },
+  "homepage": "https://github.com/elguala9/wildcats-opensea#readme",
+  "dependencies": {
+    "moralis": "^1.8.0",
+    "url": "^0.11.0",
+    "web3": "^1.7.3",
+    "xhr2-cookies": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
+  }
+}

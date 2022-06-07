@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        //"target" : "es2015",
+        //"module" : "commonjs",
+        "declaration" : true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+    },
+    "file":[
+        "WildcatsOpensea.ts"
+    ]
+  }
