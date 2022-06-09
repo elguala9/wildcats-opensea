@@ -21,8 +21,13 @@ interface structEndpoint {serverUrl: string, appId : string}
       private limit : number = 100;
       private null_address : string = "0x0000000000000000000000000000000000000000";
   
-      constructor(provider : any, account : string, contract_address : string ,token_id : bigint){      
-
+      constructor(provider : any, account : string, contract_address : string ,token_id : bigint, chain : string){      
+        
+        if(chain == "1")
+          this.chain = "eth";
+        else 
+          this.chain = "rinkeby";
+        
         this.contract_address =  contract_address;
   
         this.web3 = new Web3(provider);

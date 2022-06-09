@@ -1,6 +1,6 @@
 {
   "name": "wildcats-opensea",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to interact with wildcats NFTs on Opensea",
   "main": "WildcatsOpensea.js",
   "scripts": {

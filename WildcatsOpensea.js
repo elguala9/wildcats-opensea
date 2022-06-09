@@ -44,9 +44,13 @@ var web3_1 = __importDefault(require("web3"));
 var abi_json_1 = __importDefault(require("./abi.json"));
 var node_1 = __importDefault(require("moralis/node"));
 var WildcatsOpensea = /** @class */ (function () {
-    function WildcatsOpensea(provider, account, contract_address, token_id) {
+    function WildcatsOpensea(provider, account, contract_address, token_id, chain) {
         this.limit = 100;
         this.null_address = "0x0000000000000000000000000000000000000000";
+        if (chain == "1")
+            this.chain = "eth";
+        else
+            this.chain = "rinkeby";
         this.contract_address = contract_address;
         this.web3 = new web3_1["default"](provider);
         this.account = account;

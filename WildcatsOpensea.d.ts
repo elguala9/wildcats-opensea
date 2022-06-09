@@ -13,7 +13,7 @@ export declare class WildcatsOpensea {
     private chain;
     private limit;
     private null_address;
-    constructor(provider: any, account: string, contract_address: string, token_id: bigint);
+    constructor(provider: any, account: string, contract_address: string, token_id: bigint, chain: string);
     setMoralis(_serverUrl: string, _appId: string): void;
     getTransactions(seconds: number): Promise<number>;
     getAccountTransactions(): Promise<Array<structTransaction>>;
